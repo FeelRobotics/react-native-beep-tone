@@ -1,4 +1,4 @@
-package io.github.alexkorep;
+package com.feelrobotics.beeptone;
 
 import java.util.Arrays;
 import java.util.Collections;

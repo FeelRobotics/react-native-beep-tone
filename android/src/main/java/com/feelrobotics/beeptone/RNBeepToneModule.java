@@ -1,19 +1,18 @@
-package io.github.alexkorep;
+package com.feelrobotics.beeptone;
 
-import android.media.AudioFormat;
 import android.media.AudioManager;
-import android.media.AudioTrack;
 import android.media.ToneGenerator;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 
 public class RNBeepToneModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
     private ToneGenerator beep = null;
+    private static final String TAG = "RNBeepToneModule";
+
 
     public RNBeepToneModule(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -26,10 +25,11 @@ public class RNBeepToneModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void start(int frequency, float volume) {
-        beep = new ToneGenerator(AudioManager.STREAM_MUSIC,
-                Math.round(volume/100*ToneGenerator.MAX_VOLUME));
-        beep.startTone(ToneGenerator.TONE_DTMF_0, 1000*60*60);
+    public void start(float volume) {
+        stop();
+        final int vol = (int)Math.round(volume/100.0*ToneGenerator.MAX_VOLUME);
+        beep = new ToneGenerator(AudioManager.STREAM_MUSIC, vol);
+        beep.startTone(ToneGenerator.TONE_DTMF_A);
     }
 
     @ReactMethod
