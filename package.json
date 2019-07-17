@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexkorep/react-native-beep-tone.git",
-    "baseUrl": "https://github.com/alexkorep/react-native-beep-tone"
+    "url": "git+https://github.com/FeelRobotics/react-native-beep-tone.git",
+    "baseUrl": "https://github.com/FeelRobotics/react-native-beep-tone"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Alexey Korepanov",
-    "email": "alexkorep@gmail.com"
+    "name": "FeelRobotics",
+    "email": "alexey@feelrobotics.com"
   },
   "license": "Apache-2.0",
   "licenseFilename": "LICENSE",

@@ -36,8 +36,9 @@
 
 ## Usage
 ```javascript
-import RNBeepTone from 'react-native-beep-tone';
+import { start, stop } from "react-native-beep-tone";
 
-// TODO: What to do with the module?
-RNBeepTone;
+const volume = 50; // Percent value 0..100
+start(volume);     // Start playing the sound
+stop();            // Stop playing the sound
 ```
