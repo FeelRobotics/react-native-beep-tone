@@ -1,7 +1,7 @@
 {
   "name": "react-native-beep-tone",
   "title": "React Native Beep Tone",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native library to make beep sound",
   "main": "index.js",
   "scripts": {
