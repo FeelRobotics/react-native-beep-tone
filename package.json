@@ -2,7 +2,7 @@
   "name": "react-native-beep-tone",
   "title": "React Native Beep Tone",
   "version": "1.0.1",
-  "description": "",
+  "description": "React Native library to make beep sound",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
